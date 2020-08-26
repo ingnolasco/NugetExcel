@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.1.0.16</AssemblyVersion>
+    <FileVersion>1.1.0.16</FileVersion>
+    <Version>1.1.27</Version>
+    <Authors>Edwin</Authors>
+    <PackageId>ExcelFormat</PackageId>
+    <Description>Actualizacion de epplus para net core</Description>
+    <PackageProjectUrl></PackageProjectUrl>
+    <Product>ExcelNugget02</Product>
+    <Company>Edwin</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus.Core.Extensions" Version="2.4.0" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Polly" Version="7.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Interfaces\IExcel.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Class\" />
+  </ItemGroup>
+
+</Project>
