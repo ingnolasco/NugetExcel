@@ -115,8 +115,8 @@ namespace ExcelNugget02
                                         if (property.GetValue(obj) != null)
                                         {
                                         var dato = property.GetValue(obj).ToString();
-                                        if (dato.Equals(""))
-                                            dato = "-";
+                                      // if (dato.Equals(""))
+                                           // dato = "-";
                                         
                                             dataconte[indice] = dato;
                                         }
@@ -163,7 +163,8 @@ namespace ExcelNugget02
                 policyConten.Execute(() =>
                 {
                     string range = Convertir32(data);
-                   worksheet.Cells[range].LoadFromArrays(data);
+                    worksheet.Cells[range].LoadFromArrays(data);
+                    TextoAjuste();
                     GenerarCeldaFinal();
                     if (_proceso == null)
                         GenerarBorder();
@@ -196,8 +197,7 @@ namespace ExcelNugget02
                     worksheet = excel.Workbook.Worksheets[nombrehoja];
                     Filtro(range);
                     Encabezado();
-                    CargarData(range, headerRow);
-                    TextoAjuste(1, range);
+                    worksheet.Cells[range].LoadFromArrays(headerRow);
                     AlineacionTexto(range, ExcelVerticalAlignment.Bottom, ExcelHorizontalAlignment.Left);
                     ColorTexto(range, Color.WhiteSmoke, Color.Black, 12);
                  
@@ -314,10 +314,8 @@ namespace ExcelNugget02
             }
             catch (Exception ex)
             {
-
                 _log.Error($"Errror al asignar Color celda {ex.StackTrace}");
             }
-
 
         }
         private void Border(int position, string celda)
@@ -344,20 +342,16 @@ namespace ExcelNugget02
             }
 
         }
-        private void TextoAjuste(int opcion, string celda)
+        private void TextoAjuste()
         {
             try
             {
-                switch (opcion)
-                {
-                    case 1:
-                        worksheet.Cells[celda].AutoFitColumns();
-                        break;
-                }
+                        worksheet.Cells.AutoFitColumns();
             }
             catch (Exception ex)
             {
-                _log.Error($"Error a ajustar el texto {ex.StackTrace}");
+                Console.WriteLine("Error de ajuste de Texto ");
+                _log.ErrorFormat($"Error a ajustar el texto {ex.StackTrace}");
 
             }
 
@@ -425,20 +419,6 @@ namespace ExcelNugget02
         private void Filtro(string range)
         {
             worksheet.Cells[range].AutoFilter = true;
-        }
-        private void CargarData(string celda, List<string[]> datos)
-        {
-            try
-            {
-                worksheet.Cells[celda].LoadFromArrays(datos);
-                _log.Info("Cargo la Data con exito..");
-            }
-            catch (Exception ex)
-            {
-                _log.Error($"Error al cargar  la data {ex.StackTrace}");
-
-            }
-
         }
         #endregion
 

@@ -6292,13 +6292,13 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.1.27",
+    "version": "1.1.28",
     "restore": {
-      "projectUniqueName": "E:\\Repo\\ExcelformaNuggeyYprueba\\ExcelNugget02\\ExcelNugget02\\ExcelNugget02.csproj",
+      "projectUniqueName": "E:\\RepositorioIngNolasco\\NugetExcel\\ExcelNugget02\\ExcelNugget02\\ExcelNugget02.csproj",
       "projectName": "ExcelFormat",
-      "projectPath": "E:\\Repo\\ExcelformaNuggeyYprueba\\ExcelNugget02\\ExcelNugget02\\ExcelNugget02.csproj",
+      "projectPath": "E:\\RepositorioIngNolasco\\NugetExcel\\ExcelNugget02\\ExcelNugget02\\ExcelNugget02.csproj",
       "packagesPath": "C:\\Users\\alex\\.nuget\\packages\\",
-      "outputPath": "E:\\Repo\\ExcelformaNuggeyYprueba\\ExcelNugget02\\ExcelNugget02\\obj\\",
+      "outputPath": "E:\\RepositorioIngNolasco\\NugetExcel\\ExcelNugget02\\ExcelNugget02\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "ExcelNugget02/1.1.27": {
+      "ExcelNugget02/1.1.28": {
         "dependencies": {
           "EPPlus.Core.Extensions": "2.4.0",
           "Polly": "7.2.1",
@@ -1244,7 +1244,7 @@
     }
   },
   "libraries": {
-    "ExcelNugget02/1.1.27": {
+    "ExcelNugget02/1.1.28": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

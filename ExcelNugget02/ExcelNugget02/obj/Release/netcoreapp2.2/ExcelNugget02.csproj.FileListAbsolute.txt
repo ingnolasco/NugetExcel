@@ -19,3 +19,13 @@ E:\Repo\ExcelformaNuggeyYprueba\ExcelNugget02\ExcelNugget02\obj\Release\netcorea
 E:\Repo\ExcelformaNuggeyYprueba\ExcelNugget02\ExcelNugget02\obj\Release\netcoreapp2.2\ExcelNugget02.AssemblyInfo.cs
 E:\Repo\ExcelformaNuggeyYprueba\ExcelNugget02\ExcelNugget02\obj\Release\netcoreapp2.2\ExcelNugget02.dll
 E:\Repo\ExcelformaNuggeyYprueba\ExcelNugget02\ExcelNugget02\obj\Release\netcoreapp2.2\ExcelNugget02.pdb
+E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\bin\Release\netcoreapp2.2\Interfaces\IExcel.cs
+E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\bin\Release\netcoreapp2.2\ExcelNugget02.deps.json
+E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\bin\Release\netcoreapp2.2\ExcelNugget02.dll
+E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\bin\Release\netcoreapp2.2\ExcelNugget02.pdb
+E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\obj\Release\netcoreapp2.2\ExcelNugget02.csprojAssemblyReference.cache
+E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\obj\Release\netcoreapp2.2\ExcelNugget02.csproj.CoreCompileInputs.cache
+E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\obj\Release\netcoreapp2.2\ExcelNugget02.AssemblyInfoInputs.cache
+E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\obj\Release\netcoreapp2.2\ExcelNugget02.AssemblyInfo.cs
+E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\obj\Release\netcoreapp2.2\ExcelNugget02.dll
+E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\obj\Release\netcoreapp2.2\ExcelNugget02.pdb

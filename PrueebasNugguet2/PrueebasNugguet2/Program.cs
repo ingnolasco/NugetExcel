@@ -40,70 +40,56 @@ namespace PrueebasNugguet2
             {
                 p2 = new Prueba2()
                 {
-                    PLANUM = "980150146168",
-                    PERIODO = "GEN",
-                    NIT = "02100410360010",
-                    RAZON_SOCIAL = "GUADRON TORRES REYNALDO ERNESTO",
-                    ID_SUCURSAL = "01",
-                    EMPLEADOS_DECLARADOS = "1",
-                    MONTO_TOTAL = "500.32",
-                    ARCHIVO = "200605",
-                    NPE = "001",
-                    FECHA_ADICION = "1",
-                    FECHA_PRESENTACIÓN = "30.9400",
-                    CATEGORIA = "5/3/2019 22:29:06",
-                    CC = "05/03/2019",
-                    Name = "MAX021004103600100012006050001.ZIP",
-                    Tele = "",
-                    Correo = ""
-                };
-                lista2.Add(p2);
-                p2 = new Prueba2()
-                {
-                    PLANUM = "980150146168",
-                    PERIODO = "GEN",
-                    NIT = "02100410360010",
-                    RAZON_SOCIAL = "GUADRON TORRES REYNALDO ERNESTO",
-                    ID_SUCURSAL = "",
-                    EMPLEADOS_DECLARADOS = "",
-                    MONTO_TOTAL = "",
-                    ARCHIVO = "200605",
-                    NPE = "001",
-                    FECHA_ADICION = "1",
-                    FECHA_PRESENTACIÓN = "30.9400",
-                    CATEGORIA = "5/3/2019 22:29:06",
-                    CC = "05/03/2019",
-                    Name = "MAX021004103600100012006050001.ZIP",
-                    Tele = "",
-                    Correo=""
-                };
-                lista2.Add(p2);
-                p2 = new Prueba2()
-                {
-                    PLANUM = "",
-                    PERIODO = "",
-                    NIT = "",
-                    RAZON_SOCIAL = "",
-                    ID_SUCURSAL = "",
-                    EMPLEADOS_DECLARADOS = "",
-                    MONTO_TOTAL = "",
-                    ARCHIVO = "",
-                    NPE = "",
-                    FECHA_ADICION = "1",
-                    FECHA_PRESENTACIÓN = "30.9400",
+                    ID_PLANILLA = "980150448864",
+                    ESTADO = "GEN",
+                    NIT = "06140208840013",
+                    EMPRESA = "",
                     CATEGORIA = "",
-                    CC = "",
-                    Name = "",
-                    Tele = "",
-                    Correo = ""
+                    ASESOR = "",
+                    GESTOR_EMPRESARIAL = "",
+                    PERIODO = 0,
+                    ID_SUCURSAL = "",
+                    EMPLEADOS_DECLARADOS =0,
+                    MONTO_TOTAL = "",
+                    FECHA_ADICION = $"{DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss")}",
+                    FECHA_ADICCION2 = $"{DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss")}",
+                    ARCHIVO = "",
+                    NPE="",
+                    CORREOS= ""
                 };
                 lista2.Add(p2);
+                p2 = new Prueba2()
+                {
+                    ID_PLANILLA = "980150448864",
+                    ESTADO = "GEN",
+                    NIT = "06140208840013",
+                    EMPRESA = "LUNA PAN S.A DE C.V.",
+                    CATEGORIA = "GEM",
+                    ASESOR = "",
+                    GESTOR_EMPRESARIAL = "KAREN IVETH MENA LOPEZ",
+                    PERIODO = 0,
+                    ID_SUCURSAL = "001",
+                    EMPLEADOS_DECLARADOS = 0,
+                    MONTO_TOTAL = "94.0800",
+                    FECHA_ADICION = $"{DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss")}",
+                    FECHA_ADICCION2 = $"{DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss")}",
+                    ARCHIVO = "MAX061402088400130012013070001.ZIP",
+                    NPE = "",
+                    CORREOS = "DAMALYCOREAS@GMAIL.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM" +
+                   "DAMALYCOREAS@GMAIL.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM"+
+                   "DAMALYCOREAS@GMAIL.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM"+
+                   "DAMALYCOREAS@GMAIL.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM"+
+                   "DAMALYCOREAS@GMAIL.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM"+
+                   "DAMALYCOREAS@GMAIL.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM - GERSONJOYA.DICARSON@OUTLOOK.COM"
+                };
+                lista2.Add(p2);
+
             }
 
             //deuda
 
 
-            int c = 0;
+           // int c = 0;
             //IExcel excel = new Excel();
             //for (int s=1;s<=5;s++) {
              
@@ -123,23 +109,17 @@ namespace PrueebasNugguet2
             //        Console.WriteLine(resp.FileName);
             //}
 
-            IExcel excel = new Excel();
-            for (int s = 1; s <= 1; s++)
-            {
-                for (int a = 1; a <= 1; a++)
-                {
-                 
+                    IExcel excel = new Excel();
+  
                     excel.NewContent(lista2, $"hoja 1");
              
-                
                     excel.NewContent(lista2, $"Hoja 2");
-     
-                }
-                var resp = excel.Guardar($"202jh1").Result;
+    
+                var resp = excel.Guardar($"SEPP_DNP8{DateTime.Now.ToString("ddMMyyyy")}").Result;
 
                 if (resp.FileName != null)
                     Console.WriteLine(resp.FileName);
-            }
+           
 
 
            

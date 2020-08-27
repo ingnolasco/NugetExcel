@@ -6294,11 +6294,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Repo\\ExcelformaNuggeyYprueba\\PrueebasNugguet2\\PrueebasNugguet2\\PrueebasNugguet2.csproj",
+      "projectUniqueName": "E:\\RepositorioIngNolasco\\NugetExcel\\PrueebasNugguet2\\PrueebasNugguet2\\PrueebasNugguet2.csproj",
       "projectName": "PrueebasNugguet2",
-      "projectPath": "E:\\Repo\\ExcelformaNuggeyYprueba\\PrueebasNugguet2\\PrueebasNugguet2\\PrueebasNugguet2.csproj",
+      "projectPath": "E:\\RepositorioIngNolasco\\NugetExcel\\PrueebasNugguet2\\PrueebasNugguet2\\PrueebasNugguet2.csproj",
       "packagesPath": "C:\\Users\\alex\\.nuget\\packages\\",
-      "outputPath": "E:\\Repo\\ExcelformaNuggeyYprueba\\PrueebasNugguet2\\PrueebasNugguet2\\obj\\",
+      "outputPath": "E:\\RepositorioIngNolasco\\NugetExcel\\PrueebasNugguet2\\PrueebasNugguet2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -6318,11 +6318,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Repo\\ExcelformaNuggeyYprueba\\PruebaExcelFormat\\PruebaExcelFormat\\PruebaExcelFormat.csproj",
+      "projectUniqueName": "E:\\RepositorioIngNolasco\\NugetExcel\\PruebaExcelFormat\\PruebaExcelFormat\\PruebaExcelFormat.csproj",
       "projectName": "PruebaExcelFormat",
-      "projectPath": "E:\\Repo\\ExcelformaNuggeyYprueba\\PruebaExcelFormat\\PruebaExcelFormat\\PruebaExcelFormat.csproj",
+      "projectPath": "E:\\RepositorioIngNolasco\\NugetExcel\\PruebaExcelFormat\\PruebaExcelFormat\\PruebaExcelFormat.csproj",
       "packagesPath": "C:\\Users\\alex\\.nuget\\packages\\",
-      "outputPath": "E:\\Repo\\ExcelformaNuggeyYprueba\\PruebaExcelFormat\\PruebaExcelFormat\\obj\\",
+      "outputPath": "E:\\RepositorioIngNolasco\\NugetExcel\\PruebaExcelFormat\\PruebaExcelFormat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
