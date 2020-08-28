@@ -17,19 +17,36 @@ namespace PrueebasNugguet2
             {
                 pp = new Prueba()
                 {
-                    PLANUM = "980150263312",
-                    PERIODO = "201909",
-                    NIT = "04130101470019",
-                    RAZON_SOCIAL = "LANDAVERDE FLORES GREGORIO DE JESUS",
+                    PLANUM = "980150448864",
+                    PERIODO = "201307",
+                    NIT = "06140208840013",
+                    RAZON_SOCIAL = "LUNA PAN S.A DE C.V.",
                     ID_SUCURSAL = "001",
-                    EMPLEADOS_DECLARADOS = "1",
-                    MONTO_TOTAL = "60",
-                    ARCHIVO = "MAX010325057510200012020010001.ZIP",
-                    NPE = "05450000600000041781012020001202002140",
-                    FECHA_ADICION = "2020-02-07-13.50.08.037772",
-                    FECHA_PRESENTACIÓN = "7/2/2020",
-                    CATEGORIA = "05450000456300065347032020001202004177",
-                    CC = "123"
+                    EMPLEADOS_DECLARADOS = "3",
+                    MONTO_TOTAL = "94.0800",
+                    ARCHIVO = "MAX061402088400130012013070001.ZIP",
+                    NPE = "",
+                    FECHA_ADICION = "3/6/2020 13:55:07",
+                    FECHA_PRESENTACIÓN = "27/08/2020",
+                    CATEGORIA = "GEM",
+
+                };
+                lista.Add(pp);
+                pp = new Prueba()
+                {
+                    PLANUM = "980150448864",
+                    PERIODO = "201307",
+                    NIT = "06140208840013",
+                    RAZON_SOCIAL = "Universidad de el salvador ",
+                    ID_SUCURSAL = "001",
+                    EMPLEADOS_DECLARADOS = "3",
+                    MONTO_TOTAL = "94.0800",
+                    ARCHIVO = "MAX061402088400130012013070001.ZIP",
+                    NPE = "",
+                    FECHA_ADICION = "3/6/2020 13:55:07",
+                    FECHA_PRESENTACIÓN = "27/08/2020",
+                    CATEGORIA = "GEM",
+
                 };
                 lista.Add(pp);
             }
@@ -109,13 +126,13 @@ namespace PrueebasNugguet2
             //        Console.WriteLine(resp.FileName);
             //}
 
-                    IExcel excel = new Excel();
+                    IExcel excel = new Excel("deuda");
   
-                    excel.NewContent(lista2, $"hoja 1");
+                    excel.NewContent(lista, $"hoja 1");
              
                     excel.NewContent(lista2, $"Hoja 2");
     
-                var resp = excel.Guardar($"SEPP_DNP8{DateTime.Now.ToString("ddMMyyyy")}").Result;
+                var resp = excel.Guardar($"SEPP_DNP10{DateTime.Now.ToString("ddMMyyyy")}").Result;
 
                 if (resp.FileName != null)
                     Console.WriteLine(resp.FileName);

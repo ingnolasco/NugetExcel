@@ -23,7 +23,6 @@ E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\bin\Release\netc
 E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\bin\Release\netcoreapp2.2\ExcelNugget02.deps.json
 E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\bin\Release\netcoreapp2.2\ExcelNugget02.dll
 E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\bin\Release\netcoreapp2.2\ExcelNugget02.pdb
-E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\obj\Release\netcoreapp2.2\ExcelNugget02.csprojAssemblyReference.cache
 E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\obj\Release\netcoreapp2.2\ExcelNugget02.csproj.CoreCompileInputs.cache
 E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\obj\Release\netcoreapp2.2\ExcelNugget02.AssemblyInfoInputs.cache
 E:\RepositorioIngNolasco\NugetExcel\ExcelNugget02\ExcelNugget02\obj\Release\netcoreapp2.2\ExcelNugget02.AssemblyInfo.cs

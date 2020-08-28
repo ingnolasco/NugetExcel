@@ -31,8 +31,7 @@ namespace PruebaExcelFormat
         public string FECHA_PRESENTACIÓN { get; set; }
         [DescripcionExcel(Name = "CATEGORIA", Ignore = false)]
         public string CATEGORIA { get; set; }
-        [DescripcionExcel(Name = "CATEGORIA", Ignore = false)]
-        public string CC { get; set; }
+ 
     }
     public class Prueba2
     {

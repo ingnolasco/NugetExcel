@@ -20,3 +20,14 @@ E:\Repo\ExcelformaNuggeyYprueba\PruebaExcelFormat\PruebaExcelFormat\obj\Debug\ne
 E:\Repo\ExcelformaNuggeyYprueba\PruebaExcelFormat\PruebaExcelFormat\obj\Debug\netcoreapp2.2\PruebaExcelFormat.AssemblyInfo.cs
 E:\Repo\ExcelformaNuggeyYprueba\PruebaExcelFormat\PruebaExcelFormat\obj\Debug\netcoreapp2.2\PruebaExcelFormat.dll
 E:\Repo\ExcelformaNuggeyYprueba\PruebaExcelFormat\PruebaExcelFormat\obj\Debug\netcoreapp2.2\PruebaExcelFormat.pdb
+E:\RepositorioIngNolasco\NugetExcel\PruebaExcelFormat\PruebaExcelFormat\bin\Debug\netcoreapp2.2\PruebaExcelFormat.deps.json
+E:\RepositorioIngNolasco\NugetExcel\PruebaExcelFormat\PruebaExcelFormat\bin\Debug\netcoreapp2.2\PruebaExcelFormat.runtimeconfig.json
+E:\RepositorioIngNolasco\NugetExcel\PruebaExcelFormat\PruebaExcelFormat\bin\Debug\netcoreapp2.2\PruebaExcelFormat.runtimeconfig.dev.json
+E:\RepositorioIngNolasco\NugetExcel\PruebaExcelFormat\PruebaExcelFormat\bin\Debug\netcoreapp2.2\PruebaExcelFormat.dll
+E:\RepositorioIngNolasco\NugetExcel\PruebaExcelFormat\PruebaExcelFormat\bin\Debug\netcoreapp2.2\PruebaExcelFormat.pdb
+E:\RepositorioIngNolasco\NugetExcel\PruebaExcelFormat\PruebaExcelFormat\obj\Debug\netcoreapp2.2\PruebaExcelFormat.csprojAssemblyReference.cache
+E:\RepositorioIngNolasco\NugetExcel\PruebaExcelFormat\PruebaExcelFormat\obj\Debug\netcoreapp2.2\PruebaExcelFormat.csproj.CoreCompileInputs.cache
+E:\RepositorioIngNolasco\NugetExcel\PruebaExcelFormat\PruebaExcelFormat\obj\Debug\netcoreapp2.2\PruebaExcelFormat.AssemblyInfoInputs.cache
+E:\RepositorioIngNolasco\NugetExcel\PruebaExcelFormat\PruebaExcelFormat\obj\Debug\netcoreapp2.2\PruebaExcelFormat.AssemblyInfo.cs
+E:\RepositorioIngNolasco\NugetExcel\PruebaExcelFormat\PruebaExcelFormat\obj\Debug\netcoreapp2.2\PruebaExcelFormat.dll
+E:\RepositorioIngNolasco\NugetExcel\PruebaExcelFormat\PruebaExcelFormat\obj\Debug\netcoreapp2.2\PruebaExcelFormat.pdb

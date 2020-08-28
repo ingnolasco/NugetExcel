@@ -133,6 +133,7 @@ namespace ExcelNugget02
                          bool resp= Header(hoja).Result;
                          if(resp)
                            resp= Content().Result;
+                      
                         _log.Info($"Archivo excel creado con exito {_fecha.FechaNow().Result}");
                     }
                 });
@@ -154,23 +155,23 @@ namespace ExcelNugget02
      
             try
             {
-                var policyConten = RetryPolicy.Handle<Exception>().Or<NullReferenceException>().
-                    WaitAndRetry(4, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)), (ex, time) =>
-                    {
-                        _log.Fatal($"Intento para crear el contenido del excel, {time.Seconds} {_fecha.FechaNow().Result}");
-                    });
+               // var policyConten = RetryPolicy.Handle<Exception>().Or<NullReferenceException>().
+                  //  WaitAndRetry(4, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)), (ex, time) =>
+                  //  {
+                   //     _log.Fatal($"Intento para crear el contenido del excel, {time.Seconds} {_fecha.FechaNow().Result}");
+                   // });
 
-                policyConten.Execute(() =>
-                {
+             //   policyConten.Execute(() =>
+             //   {
                     string range = Convertir32(data);
                     worksheet.Cells[range].LoadFromArrays(data);
-                    TextoAjuste();
                     GenerarCeldaFinal();
                     if (_proceso == null)
                         GenerarBorder();
                     positionInicion--;
+                    worksheet.Cells[worksheet.Dimension.Address].AutoFitColumns();
                     _resp = true;
-                });
+               // });
             }
             catch (Exception ex)
             {
@@ -249,18 +250,18 @@ namespace ExcelNugget02
             FileBase64 _fileBase64 = new FileBase64();
             try
             {
-                var policySave=RetryPolicy.Handle<Exception>().Or<NullReferenceException>().
-                       WaitAndRetry(4, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)), (ex, time) =>
-                       {
-                           _log.Warn($"Intenton  Para guardar el archivo excel {time.Seconds}, {_fecha.FechaNow().Result}");
-                       });
+                //var policySave=RetryPolicy.Handle<Exception>().Or<NullReferenceException>().
+                    //   WaitAndRetry(4, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)), (ex, time) =>
+                    //   {
+                       //    _log.Warn($"Intenton  Para guardar el archivo excel {time.Seconds}, {_fecha.FechaNow().Result}");
+                    //   });
 
-                policySave.Execute(()=> {
+               // policySave.Execute(()=> {
                     Directorio();
                     var excelUbicacion = $@"{UbicacionDoc}/Excel/{FileName}.xlsx";
-           
 
-                    FileInfo excelFile = new FileInfo(excelUbicacion);
+              
+                FileInfo excelFile = new FileInfo(excelUbicacion);
                     excelFile.Directory.Create();
                     excel.SaveAs(excelFile);
                     _log.Info($"Archivo guardado con exito {_fecha.FechaNow().Result}");
@@ -273,7 +274,7 @@ namespace ExcelNugget02
                   //  File.Delete(excelUbicacion);
                     _log.Info($"Archivo elminado con exito {_fecha.FechaNow().Result}");
                     
-                });
+              //  });
             }
             catch (Exception ex)
             {
@@ -346,7 +347,7 @@ namespace ExcelNugget02
         {
             try
             {
-                        worksheet.Cells.AutoFitColumns();
+                worksheet.Cells.AutoFitColumns(2, 50);
             }
             catch (Exception ex)
             {

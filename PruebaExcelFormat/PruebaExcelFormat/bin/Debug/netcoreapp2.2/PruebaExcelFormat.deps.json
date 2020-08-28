@@ -1,14 +1,14 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "ca087fd13ce959418ec753d7c44af735be1eae67"
+    "signature": "bc22428269f2f554bea0326437d9630697dc0814"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
       "PruebaExcelFormat/1.0.0": {
         "dependencies": {
-          "ExcelFormat": "1.1.27"
+          "ExcelFormat": "1.1.28"
         },
         "runtime": {
           "PruebaExcelFormat.dll": {}
@@ -41,7 +41,7 @@
           }
         }
       },
-      "ExcelFormat/1.1.27": {
+      "ExcelFormat/1.1.28": {
         "dependencies": {
           "EPPlus.Core.Extensions": "2.4.0",
           "Polly": "7.2.1",
@@ -1274,12 +1274,12 @@
       "path": "epplus.core.extensions/2.4.0",
       "hashPath": "epplus.core.extensions.2.4.0.nupkg.sha512"
     },
-    "ExcelFormat/1.1.27": {
+    "ExcelFormat/1.1.28": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GnlGbJqwv/FxHr/7wpBfRsJNGDpIFkDttK6z8ccOsxcTeGgoYz6LZcXL1foVzHeYu/i79iDwcOiHcecFJWS6Gw==",
-      "path": "excelformat/1.1.27",
-      "hashPath": "excelformat.1.1.27.nupkg.sha512"
+      "sha512": "sha512-U2AptqsaLD+mZpN9GSXpNVmihah6mSkYS7KLPrLTh5mDiv+j6FlJZ1Y1/YGARkWuzs81iNbK1bvuCJ2nuszqaA==",
+      "path": "excelformat/1.1.28",
+      "hashPath": "excelformat.1.1.28.nupkg.sha512"
     },
     "log4net/2.0.8": {
       "type": "package",
