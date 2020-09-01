@@ -9,7 +9,7 @@ namespace PruebaExcelFormat
     {
         [DescripcionExcel(Name = "PLANUM", Ignore = false)]
         public string PLANUM { get; set; }
-        [DescripcionExcel(Name = "PERIODO", Ignore = false)]
+      //  [DescripcionExcel(Name = "PERIODO", Ignore = false)]
         public string PERIODO { get; set; }
         [DescripcionExcel(Name = "NIT", Ignore = false)]
         public string NIT { get; set; }

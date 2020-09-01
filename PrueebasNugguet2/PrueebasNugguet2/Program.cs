@@ -13,7 +13,7 @@ namespace PrueebasNugguet2
         {
             List<Prueba> lista = new List<Prueba>();
             Prueba pp;
-            for (int a = 1; a <= 50; a++)
+            for (int a = 1; a <= 80; a++)
             {
                 pp = new Prueba()
                 {
@@ -126,13 +126,13 @@ namespace PrueebasNugguet2
             //        Console.WriteLine(resp.FileName);
             //}
 
-                    IExcel excel = new Excel("deuda");
+                    IExcel excel = new Excel();
   
-                    excel.NewContent(lista, $"hoja 1");
+                    excel.NewContent(lista, "hoja 1");
              
-                    excel.NewContent(lista2, $"Hoja 2");
+                   /// excel.NewContent(lista2, $"Hoja 2");
     
-                var resp = excel.Guardar($"SEPP_DNP10{DateTime.Now.ToString("ddMMyyyy")}").Result;
+                var resp = excel.Guardar("prueba").Result;
 
                 if (resp.FileName != null)
                     Console.WriteLine(resp.FileName);

@@ -36,7 +36,7 @@ namespace PruebaExcelFormat
 
             List<Prueba2> lista2 = new List<Prueba2>();
             Prueba2 p2;
-            for (int a = 1; a <= 100; a++)
+            for (int a = 1; a <= 10; a++)
             {
                 p2 = new Prueba2()
                 {

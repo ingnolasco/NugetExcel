@@ -46,6 +46,7 @@ namespace ExcelNugget02
         {
             celdaInicio = 'A';
             positionInicion = 2;
+            _proceso = "normal";
         }
 
         #region PROCESO GENERAR DEUDA
@@ -90,7 +91,7 @@ namespace ExcelNugget02
                 var policyExcel = RetryPolicy.Handle<Exception>().Or<NullReferenceException>().
                    WaitAndRetry(4, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)), (ex, time) =>
                    {
-                       _log.Warn($"Intent Para crear el excel {time.Seconds}, {_fecha.FechaNow().Result}");
+                       _log.Warn($"Intento Para crear el excel {time.Seconds}, {_fecha.FechaNow().Result}");
                   });
 
                 policyExcel.Execute(() => {
@@ -173,7 +174,13 @@ namespace ExcelNugget02
         private Task<bool> Header(string nombrehoja)
         {
             if (_proceso.Equals("deuda"))
+            {
                 positionInicion = 1;
+            }
+            else {
+                positionInicion = 2;
+            }
+                
             bool _resp = false;
             try
             {
