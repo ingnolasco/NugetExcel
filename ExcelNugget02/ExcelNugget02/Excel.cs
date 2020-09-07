@@ -254,6 +254,7 @@ namespace ExcelNugget02
                     excelFile.Directory.Create();
                     excel.SaveAs(excelFile);
                     _log.Info($"Archivo excel guardado {_fecha.FechaNow().Result}");
+
                     _fileBase64 = new FileBase64()
                     {
                         FileName = Path.GetFileName(excelUbicacion),
