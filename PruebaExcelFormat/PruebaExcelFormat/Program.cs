@@ -97,16 +97,15 @@ namespace PruebaExcelFormat
 
 
             /*conversion a deuda robot  */
-            IExcel excel = new Excel("deuda");
+            IExcel excel = new Excel();
             excel.NewContent(lista,"Hoja1");
             excel.NewContent(lista2, "Hoja2");
             var resp =  excel.Guardar($"SEPP_DNP_{DateTime.Now.ToString("dd-MM-yyyy")}").Result;
 
             if (resp.FileName != null)
-                Console.WriteLine(resp.FileName);
+            Console.WriteLine(resp.FileName);
             Console.ReadLine();
             //lista.Clear();
-
 
         } 
     }
